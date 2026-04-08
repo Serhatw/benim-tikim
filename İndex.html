@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Bizim Hikayemiz 💖</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: black;
+    color: white;
+    text-align: center;
+}
+.slide {
+    display: none;
+}
+.slide img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+}
+.text {
+    font-size: 20px;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="muzik.mp3" type="audio/mpeg">
+</audio>
+
+<div class="slide"><img src="1.jpg"><div class="text">Düğünümüzün hayalini kurduğumuz an 💍</div></div>
+<div class="slide"><img src="2.jpg"><div class="text">Kaynanla ilk daten 😏</div></div>
+<div class="slide"><img src="3.jpg"><div class="text">Silah gibi çıktığımız an 🔥</div></div>
+<div class="slide"><img src="4.jpg"><div class="text">Minnoşluğun 🥺</div></div>
+<div class="slide"><img src="5.jpg"><div class="text">Sürpriz yaptığım gün 💖</div></div>
+<div class="slide"><img src="6.jpg"><div class="text">Doğum günü prensesim 👑</div></div>
+<div class="slide"><img src="7.jpg"><div class="text">Hayatımın en güzel haftası ❤️</div></div>
+<div class="slide"><img src="8.jpg"><div class="text">İlk beraber uyumamız 😴</div></div>
+<div class="slide"><img src="9.jpg"><div class="text">Yine silah gibi 😎</div></div>
+<div class="slide"><img src="10.jpg"><div class="text">En minnoş halimiz 💕</div></div>
+
+<script>
+let index = 0;
+let slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    index++;
+    if (index > slides.length) { index = 1; }
+    slides[index - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}
+
+showSlides();
+</script>
+
+</body>
+</html>
