@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Bizim Hikayemiz 💖</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.text {
+  font-size: 22px;
+  padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="muzik.mp3" type="audio/mpeg">
+</audio>
+
+<div class="slide"><img src="1.jpg"><div class="text">İlk günlerimizden bir foto… seninle başlayan en güzel hikaye 💖</div></div>
+
+<div class="slide"><img src="2.jpg"><div class="text">Bana minnoş ellerinle hazırladığın tatlıyı yedirmiştin 😍</div></div>
+
+<div class="slide"><img src="3.jpg"><div class="text">Hastane date… ama sen olunca her yer güzel 🥺</div></div>
+
+<div class="slide"><img src="4.jpg"><div class="text">Yine bana o leziz yemeklerinden yapmıştın ❤️</div></div>
+
+<div class="slide"><img src="5.jpg"><div class="text">Beraber gülüp ağladığımız gündü… en gerçek halimiz 💔❤️</div></div>
+
+<div class="slide"><img src="6.jpg"><div class="text">Minnoş bebeğime minnoş balonlar 🎈</div></div>
+
+<div class="slide"><img src="7.jpg"><div class="text">O gün düğünümüzdeki halimizi hayal ediyorduk 🤍</div></div>
+
+<div class="slide"><img src="8.jpg"><div class="text">Kaynanayla ilk date’in 😄 ama sen yine çok tatlıydın</div></div>
+
+<div class="slide"><img src="9.jpg"><div class="text">Silah gibi çıktığımız anlardan biri 😎🔥</div></div>
+
+<div class="slide"><img src="10.jpg"><div class="text">Senin benim yanımdaki o minnoşluğun… iyi ki varsın ❤️</div></div>
+
+<div class="slide"><img src="11.jpg"><div class="text">Sana sürpriz yapmıştım… mutluluktan gözlerin parlıyordu ✨</div></div>
+
+<div class="slide"><img src="12.jpg"><div class="text">Doğum günü sürprizin… prenses gibi olmuşsun 👑</div></div>
+
+<div class="slide"><img src="13.jpg"><div class="text">Yanıma gelmiştin… hayatımın en güzel haftasını yaşattın 💕</div></div>
+
+<div class="slide"><img src="14.jpg"><div class="text">İlk beraber uyumamız… minnoş gibi uyuyordun 😴❤️</div></div>
+
+<div class="slide"><img src="15.jpg"><div class="text">Yine silah gibi çıktığımız bir foto 😎🔥</div></div>
+
+<div class="slide"><img src="16.jpg"><div class="text">Ve son… en minnoş halimiz 💖 sonsuza kadar sen</div></div>
+
+<script>
+let index = 0;
+let slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  index++;
+  if (index > slides.length) { index = 1; }
+  slides[index - 1].style.display = "block";
+  setTimeout(showSlides, 3000);
+}
+
+showSlides();
+</script>
+
+</body>
+</html>
